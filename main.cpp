@@ -21,7 +21,7 @@ int main()
 {
 	int s1 = _atoi("");
 	int s2 = _atoi("-");
-	int s3 = _atoi("250");
+	int s3 = _atoi("250.123");
 	int s4 = _atoi("-360");
 	int s5 = _atoi("123456789");
 	int s6 = _atoi("-123456789");
