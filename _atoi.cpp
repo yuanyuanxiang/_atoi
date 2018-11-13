@@ -27,8 +27,8 @@ int _atoi(const char *src)
 	if (*p){
 		int s = 0;
 		const int *n = a[0];
-		while (*p && '.'!=*p) {assert(('0'<=*p && *p<='9') || '-'==*p);++p;}
-		assert(p - src <= 10);
+		while (*p && '.'!=*p) {_assert(('0'<=*p && *p<='9') || '-'==*p);++p;}
+		_assert(p - src <= 10);
 		while (--p != src) { s += n[(*p - '0')]; n += 10; }
 		return ('-' != *p) ? s + n[(*p - '0')] : -s;
 	}

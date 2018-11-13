@@ -23,7 +23,7 @@ int main()
 	int s2 = _atoi("-");
 	int s3 = _atoi("250.123");
 	int s4 = _atoi("-360");
-	int s5 = _atoi("123456789");
+	int s5 = _atoi("12345678910");
 	int s6 = _atoi("-123456789");
 
 	assert(NUMS <= 1e8);
@@ -45,7 +45,7 @@ int main()
 			_s[i] = _atoi(p[i]);
 	}
 	int tm1 = t = clock() - t;
-	printf("_atof using time: %dms\n", t);
+	printf("_atoi using time: %dms\n", t);
 	// atof
 	t = clock();
 	for (int n = 0; n < TIMES; ++n)
@@ -54,7 +54,7 @@ int main()
 			s[i] = atoi(p[i]);
 	}
 	int tm2 = t = clock() - t;
-	printf("atof using time: %dms\n", t);
+	printf("atoi using time: %dms\n", t);
 
 	// ±È½Ï²îÒì
 	for (int i = 0; i < NUMS; ++i)
